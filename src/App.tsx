@@ -1,27 +1,27 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import Header from './Header'
-import SearchBar from'./SearchBar'
+import Movie from './Movie'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <Header/>
-    
-  )
  
-}
-function SearchBar() {
-  return (
-    <form>
-      <input type="text" placeholder="Search" />
-      <label>
+    return (
+      <div className="App"> 
+      
+        <Header/>
+        <Movie/>
         
-      </label>
-    </form>
-  );
-}
-
-export default App
+      </div>
+      
+    )
+  }
+  
+  
+  
+  
+  
+  
+  
+  export default App
